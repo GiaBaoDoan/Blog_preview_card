@@ -16,7 +16,7 @@ font-family: "Figtree", cursive;
     align-items: center;
     background-color: #F4D04E;
     height: 100vh;
-    font-size: 15px;
+    font-size: 16px;
     .base {
         position: relative;
         .overlay {
@@ -38,6 +38,7 @@ font-family: "Figtree", cursive;
         position: relative;
         height: 522px;
         border-radius: 10px;
+        
         img {
             width: 100%;
             border-radius: 10px;
@@ -58,7 +59,6 @@ font-family: "Figtree", cursive;
                 font-weight: 500;
             }
             .desc {
-                font-size: 18px;
                 color: var(--grey);
             }
             .title {
@@ -82,5 +82,11 @@ font-family: "Figtree", cursive;
                 }
             }
         } 
+    }
+    @media only screen and (max-width: 600px) {
+        .card {
+            width: 327px !important;
+            height: 501px !important;
+        }  
     }
 }
